@@ -17,30 +17,35 @@
 
 <body>
 	<div class="container">
-		<nav>
-			<a href="..">&larr; View other pages</a>
-		</nav>
-		<div>
-			<h1 class="title is-3">Random Hub Glyphs Generator</h1>
-		</div>
-		<div>
-			<p>Select your wanted galaxy:</p>
-			<select class="select" id="galaxyInput">
-				<option value="Euclid">Euclid</option>
-				<option value="Hilbert">Hilbert</option>
-				<option value="Calypso">Calypso</option>
-				<option value="Budullangr">Budullangr</option>
-				<option value="Eissentam">Eissentam</option>
-			</select>
-			<p class="is-size-7">Note that glyphs only work in your current galaxy, they can't bring you to other
-				galaxies.</p>
-		</div>
-		<div>
-			<button class="button is-primary is-outlined" onclick="showRandomGlyphs()">🎲 Roll the Dice!</button>
-		</div>
-		<div>
-			<output id="glyphOutput" class="glyphs"></output>
-		</div>
+		<header>
+			<nav>
+				<div><a href="..">&larr; View other pages</a></div>
+				<button class="button" onclick="switchTheme()">Switch Theme</button>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<h1 class="title">Random Hub Glyphs Generator</h1>
+			</div>
+			<div>
+				<label>Select your wanted galaxy:</label>
+				<select class="select" id="galaxyInput">
+					<option value="Euclid">Euclid</option>
+					<option value="Hilbert">Hilbert</option>
+					<option value="Calypso">Calypso</option>
+					<option value="Budullangr">Budullangr</option>
+					<option value="Eissentam">Eissentam</option>
+				</select>
+				<p class="font-size-small">Note that glyphs only work in your current galaxy, they can't bring you to
+					other galaxies.</p>
+			</div>
+			<div>
+				<button class="button" onclick="showRandomGlyphs()">🎲 Roll the Dice!</button>
+			</div>
+			<div>
+				<output id="glyphOutput" class="glyphs"></output>
+			</div>
+		</main>
 	</div>
 </body>
 

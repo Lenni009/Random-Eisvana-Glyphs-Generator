@@ -1,3 +1,9 @@
+// determine preferred theme and update the html element with the respective tag
+(() => {
+	const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
+})()
+
 function getRegions(galaxy) {
 	const regionGlyphs = [
 		'F9556C30',
@@ -74,4 +80,9 @@ function getRandomNumber(min, max) {
 function displayGlyphs(glyphs) {
 	const output = document.getElementById('glyphOutput');
 	output.innerText = glyphs;
+}
+
+function switchTheme() {
+	const currentTheme = document.documentElement.dataset.theme;
+	document.documentElement.dataset.theme = currentTheme == 'dark' ? 'light' : 'dark';
 }
