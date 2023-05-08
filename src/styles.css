@@ -1,0 +1,32 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* glyph fonts */
+@font-face {
+	font-family: 'NMS-Glyphs-Mono';
+	src: local('NMS-Glyphs-Mono'), url('/assets/fonts/NMS-Glyphs-Mono.ttf') format('truetype');
+}
+
+html,
+body {
+	font-family: sans-serif;
+}
+
+.container {
+	margin-block-start: 2rem;
+	width: 40rem;
+}
+
+nav {
+	margin-block: 1rem;
+	font-size: large;
+}
+
+.title {
+	text-align: center;
+	margin-block-end: 2rem;
+}
+
+.glyphs {
+	font-family: 'NMS-Glyphs-Mono';
+	font-size: 3rem;
+}
