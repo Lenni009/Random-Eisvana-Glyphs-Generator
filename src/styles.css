@@ -18,8 +18,6 @@ body {
 
 nav {
 	margin-block: 1rem;
-	display: flex;
-	justify-content: space-between;
 }
 
 nav button {
