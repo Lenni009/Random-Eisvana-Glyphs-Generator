@@ -1,4 +1,4 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import "https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css";
 
 /* glyph font */
 @font-face {
@@ -19,6 +19,12 @@ body {
 nav {
 	margin-block: 1rem;
 	font-size: large;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav button {
+	width: auto;
 }
 
 .title {
@@ -29,4 +35,8 @@ nav {
 .glyphs {
 	font-family: 'NMS-Glyphs-Mono';
 	font-size: 3rem;
+}
+
+.font-size-small {
+	font-size: initial;
 }
