@@ -1,4 +1,6 @@
+import '@picocss/pico';
 import './styles.css'
+// the order of the CSS imports is IMPORTANT, DO NOT change it!!!
 import { getRandomGlyphs } from './logic/glyphs';
 import { switchTheme } from './logic/theme';
 
