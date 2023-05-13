@@ -3,7 +3,7 @@
 /* glyph font */
 @font-face {
 	font-family: 'NMS-Glyphs-Mono';
-	src: local('NMS-Glyphs-Mono'), url('../assets/NMS-Glyphs-Mono.ttf') format('truetype');
+	src: local('NMS-Glyphs-Mono'), url('../public/NMS-Glyphs-Mono.ttf') format('truetype');
 }
 
 html,
@@ -35,5 +35,5 @@ nav button {
 }
 
 .font-size-small {
-	font-size: initial;
+	font-size: 0.75rem;
 }
