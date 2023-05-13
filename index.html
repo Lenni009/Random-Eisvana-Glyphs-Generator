@@ -2,17 +2,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image" href="./public/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Random Hub Glyphs Generator</title>
-	<script src="./src/logic.js"></script>
-	<link rel="stylesheet" href="./src/styles.css">
-	<script>
-		window.onload = () => {
-			const GHubHosts = ['random.nmsgalactichub.com'];
-			if (GHubHosts.includes(window.location.host)) document.querySelector('a[href=".."]').href = 'https://lenni009.github.io/';	// 'https://nmsgalactichub.com';
-		}
-	</script>
+	<script type="module" src="/src/main.ts"></script>
 </head>
 
 <body>
@@ -20,7 +14,7 @@
 		<header>
 			<nav>
 				<div><a href="..">&larr; View other pages</a></div>
-				<button class="button" onclick="switchTheme()">Switch Theme</button>
+				<button class="button" id="themeSwitch">Switch Theme</button>
 			</nav>
 		</header>
 		<main>
@@ -40,7 +34,7 @@
 					other galaxies.</p>
 			</div>
 			<div>
-				<button class="button" onclick="showRandomGlyphs()">🎲 Roll the Dice!</button>
+				<button class="button" id="die">🎲 Roll the Dice!</button>
 			</div>
 			<div>
 				<output id="glyphOutput" class="glyphs"></output>
