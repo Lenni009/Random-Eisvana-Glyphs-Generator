@@ -4,6 +4,10 @@ import './styles.css'
 import { getRandomGlyphs } from './logic/glyphs';
 import { switchTheme } from './logic/theme';
 
+// changes the "other pages" link if on subdomain
+const GHubHosts = ['random.nmsgalactichub.com'];
+if (GHubHosts.includes(window.location.host)) (document.querySelector('a[href=".."]') as HTMLAnchorElement).href = 'https://lenni009.github.io/';	// 'https://nmsgalactichub.com';
+
 interface Elements {
 	themeSwitch?: HTMLButtonElement;
 	galaxyInput?: HTMLSelectElement;
