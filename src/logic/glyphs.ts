@@ -1,19 +1,18 @@
 import { getRandomNumber } from './randomGenerator';
-import { getRegions } from './getRegions';
+import { regionGlyphs } from './getRegions';
 
-export function getRandomGlyphs(galaxy: string) {
-	const regionGlyphs = getRandomRegion(galaxy);
+export function getRandomGlyphs() {
+	const regionGlyphs = getRandomRegion();
 	const SIV = getRandomSIV();
 	const planetId = getRandomPlanet();
 	const glyphs = planetId + SIV + regionGlyphs;
 	return glyphs;
 }
 
-function getRandomRegion(galaxy: string): string {
-	const regions = getRegions(galaxy);
-	const regionSize = regions.size;
-	const randomIndex = getRandomNumber(0, regionSize);
-	const chosenRegion = Array.from(regions)[randomIndex];
+function getRandomRegion(): string {
+	const amountOfRegions = regionGlyphs.length;
+	const randomIndex = getRandomNumber(0, amountOfRegions);
+	const chosenRegion = regionGlyphs[randomIndex];
 	return chosenRegion;
 }
 
