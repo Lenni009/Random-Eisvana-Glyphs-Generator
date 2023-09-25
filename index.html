@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image" href="./public/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Random Hub Glyphs Generator</title>
+	<title>Random Eisvana Glyphs Generator</title>
 	<script type="module" src="/src/main.ts"></script>
 </head>
 
@@ -23,24 +23,16 @@
 		</header>
 		<main>
 			<div>
-				<h1 class="title">Random Hub Glyphs Generator</h1>
+				<h1 class="title">Random Eisvana Glyphs Generator</h1>
 			</div>
 			<div>
-				<label>Select your wanted galaxy:</label>
-				<select class="select" id="galaxyInput">
-					<option value="Euclid">Euclid</option>
-					<option value="Hilbert">Hilbert</option>
-					<option value="Calypso">Calypso</option>
-					<option value="Budullangr">Budullangr</option>
-					<option value="Eissentam">Eissentam</option>
-				</select>
 				<p class="font-size-small">Note that glyphs only work in your current galaxy, they can't bring you to
 					other galaxies.</p>
 			</div>
 			<div>
 				<button class="button" id="die">🎲 Roll the Dice!</button>
 			</div>
-			<div>
+			<div class="output-wrapper">
 				<output id="glyphOutput" class="glyphs"></output>
 			</div>
 		</main>

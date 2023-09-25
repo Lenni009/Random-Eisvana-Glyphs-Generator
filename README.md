@@ -1,2 +1,2 @@
-# Random-Hub-Glyphs
-Gives a random Galactic Hub glyph address
+# Random-Eisvana-Glyphs
+Gives a random Eisvana glyph address
