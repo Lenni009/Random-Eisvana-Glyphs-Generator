@@ -1,6 +1,6 @@
-name: Minify
+name: Build
 
-run-name: Minify Code
+run-name: Build Code
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: "minify"
+  group: "build"
   cancel-in-progress: true
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: |
-          npm i
+          npm ci
           npm run build
           cd dist
           touch .nojekyll

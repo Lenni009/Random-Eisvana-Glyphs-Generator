@@ -4,20 +4,14 @@ import './styles.css'
 import { getRandomGlyphs } from './logic/glyphs';
 import { switchTheme } from './logic/theme';
 
-// changes the "other pages" link if on subdomain
-const GHubHosts = ['random.nmsgalactichub.com'];
-if (GHubHosts.includes(window.location.host)) (document.querySelector('a[href=".."]') as HTMLAnchorElement).href = 'https://lenni009.github.io/';	// 'https://nmsgalactichub.com';
-
 interface Elements {
 	themeSwitch?: HTMLButtonElement;
-	galaxyInput?: HTMLSelectElement;
 	die?: HTMLButtonElement;
 	glyphOutput?: HTMLOutputElement;
 }
 
 const ids: { [key: string]: string } = {
 	themeSwitch: 'themeSwitch',
-	galaxyInput: 'galaxyInput',
 	die: 'die',
 	glyphOutput: 'glyphOutput',
 }
@@ -35,8 +29,7 @@ elements.themeSwitch!.onclick = () => switchTheme();
 
 // this is the main function that gets called when you press the button
 function showRandomGlyphs(): void {
-	const galaxy = elements.galaxyInput!.value;
-	const glyphs = getRandomGlyphs(galaxy);
+	const glyphs = getRandomGlyphs();
 	displayGlyphs(glyphs);
 }
 
