@@ -23,8 +23,8 @@ body {
   max-width: 40rem;
 }
 
-nav button {
-  width: auto;
+.button {
+  width: 100%;
 }
 
 .title {
