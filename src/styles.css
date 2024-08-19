@@ -1,42 +1,46 @@
 /* glyph font */
 @font-face {
-	font-family: 'NMS-Glyphs-Mono';
-	src: local('NMS-Glyphs-Mono'), url('./fonts/NMS-Glyphs-Mono.ttf') format('truetype');
+  font-family: 'NMS-Glyphs-Mono';
+  src:
+    local('NMS-Glyphs-Mono'),
+    url('./fonts/NMS-Glyphs-Mono.ttf') format('truetype');
 }
 
 html,
 body {
-	font-family: sans-serif;
-	scrollbar-gutter: stable;
+  font-family: sans-serif;
+  scrollbar-gutter: stable;
 }
 
 * {
-	transition: color .3s, background-color .3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .container {
-	margin-block-start: 1rem;
-	max-width: 40rem;
+  margin-block-start: 1rem;
+  max-width: 40rem;
 }
 
-nav button {
-	width: auto;
+.button {
+  width: 100%;
 }
 
 .title {
-	text-align: center;
-	margin-block-end: 2rem;
+  text-align: center;
+  margin-block-end: 2rem;
 }
 
 .glyphs {
-	font-family: 'NMS-Glyphs-Mono';
-	font-size: 3rem;
+  font-family: 'NMS-Glyphs-Mono';
+  font-size: 3rem;
 }
 
 .font-size-small {
-	font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .output-wrapper {
-	text-align: center;
+  text-align: center;
 }
